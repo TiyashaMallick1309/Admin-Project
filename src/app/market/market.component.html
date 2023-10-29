@@ -1,0 +1,20 @@
+<div class="market-page">
+    <h1>Market</h1><br>
+    <div class="categories">
+      <button class="btn btn-primary category" *ngFor="let category of categories" (click)="onCategoryClick(category)">
+        {{ category.name }}
+      </button>
+    </div>
+    <div class="products">
+      <div class="product-list" *ngFor="let category of categories" [hidden]="!selectedCategory || selectedCategory.id !== category.id">
+        <h2>{{ category.name }}</h2><br>
+        <div class="product-card" *ngFor="let product of category.products">
+          <img src="{{ product.imageUrl }}" alt="{{ product.name }}">
+          <h2>{{ product.name }}</h2>
+          <p>{{ product.description }}</p><br>
+          <button class="btn btn-primary" (click)="addToCart(product)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

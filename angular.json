@@ -25,9 +25,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/assets/css/app.css"
             ],
-            "scripts": []
+            "scripts": ["src/assets/app.js"]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,19 @@
+<div class="pin-buttons">
+  <a routerLink="/market" class="pin-button active-pin-button" (click)="hidePinButtons()">
+    <img src="https://g.foolcdn.com/editorial/images/548723/woman-shopping-retail.jpg" alt="">
+    <br> Shop Products
+  </a>
+  <a routerLink="/product/create" class="pin-button active-pin-button" (click)="hidePinButtons()">
+    <img src="https://aws.wideinfo.org/beingmad.org/wp-content/uploads/2017/04/31075937/create-0-3.jpg" alt="">
+    <br> Add Product
+  </a>
+  <a routerLink="/product/:id" class="pin-button active-pin-button" (click)="hidePinButtons()">
+    <img src="https://neilpatel.com/wp-content/uploads/2017/05/ecommerceproduct.jpg" alt="">
+    <br> View Product
+  </a>
+  <a routerLink="/product/edit/:id" class="pin-button active-pin-button" (click)="hidePinButtons()">
+    <img src="https://th.bing.com/th/id/OIP.grl9_TWwbQ3SHwd9waEhJgHaEc?pid=ImgDet&rs=1" alt="">
+    <br> Edit Product
+  </a>
+</div>
+<router-outlet></router-outlet>
